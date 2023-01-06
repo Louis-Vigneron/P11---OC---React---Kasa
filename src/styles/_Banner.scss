@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    &__title {
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+        &__link {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 142.6%;
+            display: flex;
+            align-items: flex-end;
+            text-align: right;
+            color: $color_orange;
+            margin-left: 57px;
+        }
+    }
+}
