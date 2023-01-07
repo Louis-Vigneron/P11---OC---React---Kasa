@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: $color_black;
+    &__logo {
+        margin-top: 25px;
+    }
+    &__copyright {
+        color: $color_white;
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 34px;
+    }
+}

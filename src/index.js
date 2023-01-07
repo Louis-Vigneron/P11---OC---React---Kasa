@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './Styles/normalize.css';
 import './Styles/index.css';
-import App from './Pages/Home/Home';
+import App from './Pages/Home';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 

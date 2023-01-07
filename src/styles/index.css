@@ -1,22 +1,9 @@
-body {
-  margin: 40px 100px 0 100px;
-}
-@media (max-width: 992px) {
-  body {
-    margin: 40px 50px 0 50px;
-  }
-}
-@media (max-width: 768px) {
-  body {
-    margin: 40px 25px 0 25px;
-  }
-}
-
 .header {
   display: flex;
   justify-content: space-between;
+  margin: 40px 100px 0 100px;
 }
-.header__title {
+.header__logo {
   min-height: 33px;
 }
 .header__nav {
@@ -39,7 +26,10 @@ body {
   margin-left: 57px;
 }
 @media (max-width: 768px) {
-  .header__title {
+  .header {
+    margin: 40px 25px 0 25px;
+  }
+  .header__logo {
     width: 125px;
   }
   .header__nav__link {
@@ -54,6 +44,7 @@ body {
   margin-top: 63px;
   height: 223px;
   background: #000000;
+  margin: 40px 100px 0 100px;
   mix-blend-mode: darken;
   border-radius: 25px;
 }
@@ -85,12 +76,16 @@ body {
   align-items: center;
 }
 @media (max-width: 992px) {
+  .banner {
+    margin: 40px 50px 0 50px;
+  }
   .banner__text {
     font-size: 40px;
   }
 }
 @media (max-width: 768px) {
   .banner {
+    margin: 40px 25px 0 25px;
     height: 111px;
   }
   .banner__text {
@@ -107,10 +102,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   background: #F7F7F7;
-  margin-top: 43px;
+  margin: 40px 100px 25px 100px;
   border-radius: 25px;
   padding: 31px 50px 0 50px;
-  margin-bottom: 25px;
 }
 .box__card {
   width: 30%;
@@ -139,12 +133,16 @@ body {
 @media (max-width: 992px) {
   .box {
     padding: 35px 15px 0 15px;
+    margin: 40px 50px 0 50px;
   }
   .box__card {
     width: 45%;
   }
 }
 @media (max-width: 768px) {
+  .box {
+    margin: 40px 25px 0 25px;
+  }
   .box__card {
     margin: 0;
     width: 100%;
@@ -153,4 +151,23 @@ body {
   .box__card__img {
     height: 255px;
   }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #000000;
+}
+.footer__logo {
+  margin-top: 25px;
+}
+.footer__copyright {
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 34px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,7 +1,8 @@
 .header {
     display: flex;
     justify-content: space-between;
-    &__title {
+    margin: 40px 100px 0 100px;
+    &__logo {
         min-height: 33px;
     }
 
@@ -27,7 +28,8 @@
     }
     
     @media (max-width:$screen_mobile) {
-        &__title{
+        margin: 40px 25px 0 25px;
+        &__logo{
             width: 125px;
         }
         &__nav{

@@ -3,10 +3,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     background: #F7F7F7;
-    margin-top: 43px;
+    margin: 40px 100px 25px 100px;
     border-radius: 25px;
     padding: 31px 50px 0 50px;
-    margin-bottom: 25px;
+   
     &__card {
         width: 30%;
         margin: 25px 0;
@@ -35,13 +35,14 @@
 
     @media (max-width:$screen_tablet){
         padding: 35px 15px 0 15px;
-
+        margin: 40px 50px 0 50px;
         &__card{
             width: 45%;
         }
     }
 
     @media (max-width:$screen_mobile) {
+        margin: 40px 25px 0 25px;
         &__card{
             margin: 0;
             width: 100%;

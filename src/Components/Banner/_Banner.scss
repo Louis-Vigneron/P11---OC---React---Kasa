@@ -3,7 +3,7 @@
     margin-top: 63px;
     height: 223px;
     background: #000000;
-
+    margin: 40px 100px 0 100px;
     mix-blend-mode: darken;
     border-radius: 25px;
 
@@ -37,6 +37,7 @@
     }
 
     @media (max-width:$screen_tablet){
+        margin: 40px 50px 0 50px;
         &__text{
             font-size: 40px;
         }
@@ -44,6 +45,7 @@
 
 
     @media (max-width:$screen_mobile) {
+        margin: 40px 25px 0 25px;
         height: 111px;
         &__text{
             margin-left: 16px;
