@@ -1,8 +1,8 @@
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 0 100px;
     &__title {
+        min-height: 33px;
     }
 
     &__nav {
@@ -13,16 +13,27 @@
         margin: 0;
 
         &__link {
-            font-family: 'Montserrat';
+            font-family: $main_font;
             font-style: normal;
             font-weight: 500;
             font-size: 24px;
-            line-height: 142.6%;
+            line-height:  34px;
             display: flex;
             align-items: flex-end;
             text-align: right;
             color: $color_orange;
             margin-left: 57px;
         }
+    }
+    @media (max-width:$screen_mobile) {
+        &__title{
+            width: 125px;
+        }
+        &__nav{
+        &__link{
+            font-size: 18px;
+            line-height: 17px;
+            margin-left: 25px;
+        }}
     }
 }

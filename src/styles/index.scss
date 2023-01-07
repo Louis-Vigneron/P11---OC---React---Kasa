@@ -1,2 +1,5 @@
 @import './variables';
-@import './Banner.scss';
+@import './global';
+@import '../Components/Header/Header';
+@import '../Components/Banner/Banner';
+@import '../Components/Gallery/Gallery';
