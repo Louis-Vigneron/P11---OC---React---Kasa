@@ -35,6 +35,14 @@
         justify-content: center;
         align-items: center;
     }
+
+    @media (max-width:$screen_tablet){
+        &__text{
+            font-size: 40px;
+        }
+    }
+
+
     @media (max-width:$screen_mobile) {
         height: 111px;
         &__text{

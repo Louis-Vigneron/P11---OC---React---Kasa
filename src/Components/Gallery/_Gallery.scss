@@ -6,7 +6,7 @@
     margin-top: 43px;
     border-radius: 25px;
     padding: 31px 50px 0 50px;
-
+    margin-bottom: 25px;
     &__card {
         width: 30%;
         margin: 25px 0;
@@ -32,9 +32,16 @@
             border-radius: 10px;
         }
     }
-    @media (max-width:$screen_mobile) {
+
+    @media (max-width:$screen_tablet){
         padding: 35px 15px 0 15px;
-        margin-bottom: 25px;
+
+        &__card{
+            width: 45%;
+        }
+    }
+
+    @media (max-width:$screen_mobile) {
         &__card{
             margin: 0;
             width: 100%;

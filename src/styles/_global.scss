@@ -1,6 +1,10 @@
 body{
     margin: 40px 100px 0 100px;
 
+    @media (max-width:$screen_tablet){
+        margin: 40px 50px 0 50px;
+    }
+
     @media (max-width:$screen_mobile) {
         margin: 40px 25px 0 25px;
     }
