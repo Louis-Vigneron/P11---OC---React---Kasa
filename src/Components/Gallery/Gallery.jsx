@@ -1,20 +1,16 @@
-import logements from '../../logements.json'
+import { Link } from 'react-router-dom';
+import logements from '../../logements.json';
 const galleryList = logements;
-const gallery = document.querySelector ('.box');
-
-function createCard (){
-    galleryList.forEach(logement => {
-        gallery.innerHTML +=
-        `
-        <figure class="box__card">
-        <img class="box__card__img" src= ${logement.cover} alt="" />
-        <figcaption class="box__card__text">${logement.title}</figcaption>
-        </figure>
-        `
-    })
-}
 
 function Gallery() {
-    return createCard()
+    return (
+        <div className='box'>
+            {galleryList.map((lodging) => (
+                <Link to= "/lodging:id}" key={lodging.id} className="box__card">
+                    <img className="box__card__img" src={lodging.cover} alt={lodging.title} />
+                    <figcaption className="box__card__text">{lodging.title}</figcaption>
+                </Link>
+            ))}</div>
+    )
 }
 export default Gallery 
