@@ -1,13 +1,15 @@
 import logements from '../../logements.json';
 
+function idRecovery() {
 const search_id = window.location.search;
 var idLodging = search_id.slice(1);
-const oneLodging = logements.filter(el => el.id === idLodging);
+return logements.filter(el => el.id === idLodging);
+}
 
 function LodgingPage() {
     return (
-        oneLodging.map((el) =>
-
+        
+        idRecovery().map((el) =>
             <div className="lodging" key={el.id}>
                 <img className='lodging__carrousel' src={el.cover} alt={el.title} />
                 <div className="lodging__box">
