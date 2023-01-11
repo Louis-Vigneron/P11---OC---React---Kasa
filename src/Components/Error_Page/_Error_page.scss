@@ -29,4 +29,23 @@
         text-decoration: underline;
         color: $color_orange;
     }
+    @media (max-width:$screen_mobile){
+        justify-content: center;
+        height: auto;
+        &__title {
+            font-size: 96px;
+            margin-top: 195px;
+        }
+    
+        &__subtitle {
+            font-size: 18px;
+            margin-top: 11px;
+        }
+    
+        &__link {
+            font-size: 14px;
+            margin-top: 133px;
+            margin-bottom: 50px;
+        }
+    }
 }

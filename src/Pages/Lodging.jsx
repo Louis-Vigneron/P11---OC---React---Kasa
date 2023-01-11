@@ -1,7 +1,13 @@
+import Footer from "../Components/Footer/Footer";
+import Header from "../Components/Header/Header";
+import LodgingPage from "../Components/Lodging/Lodging";
+
 function Lodging() {
     return (
       <div>
-       <h1>404 error</h1>
+       <Header />
+       <LodgingPage />
+       <Footer />
       </div>
     )
   }
