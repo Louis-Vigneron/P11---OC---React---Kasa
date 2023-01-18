@@ -347,14 +347,6 @@ details[open] summary ~ * {
   align-items: center;
   margin: 40px 100px 25px 100px;
 }
-.lodging__carrousel {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 415px;
-  border-radius: 25px;
-  margin-bottom: 30px;
-}
 .lodging__box {
   display: flex;
   flex-wrap: wrap;
@@ -383,6 +375,7 @@ details[open] summary ~ * {
 }
 .lodging__box__rate {
   width: 50%;
+  text-align: end;
 }
 .lodging__box__tags {
   width: 50%;
@@ -466,4 +459,27 @@ details[open] summary ~ * {
   padding: 25px 15px 15px 15px;
   border-radius: 5px;
   list-style: none;
+}
+
+.carousel {
+  width: 100%;
+}
+.carousel__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+.carousel__box {
+  position: relative;
+  top: 260px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25px;
+}
+.carousel__box__button {
+  border: none;
+  background-color: transparent;
 }/*# sourceMappingURL=index.css.map */

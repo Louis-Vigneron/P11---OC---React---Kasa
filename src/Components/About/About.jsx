@@ -1,13 +1,7 @@
-import Banner_About from './Banner_about.png'
-import BannerAboutMob from './BannerAboutMob.png'
-
 function AboutPage() {
     return (
         <div className='aboutPage'>
-            
-            <img className='aboutPage__img--desktop' src={Banner_About} alt="Banner_About" />
-            <img className='aboutPage__img--mobile' src={BannerAboutMob} alt="Banner_About" /> 
-
+       
             <details className='aboutPage__collapse'>
                 <summary className='aboutPage__collapse__title'>Fiabilité</summary>
                 <p className='aboutPage__collapse__text'>

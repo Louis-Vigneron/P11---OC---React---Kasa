@@ -1,17 +1,20 @@
 import logements from '../../logements.json';
+import CareScale from '../../Components/CareScale/CareScale';
+import Carousel from '../Carousel/Carousel';
 
 function idRecovery() {
-const search_id = window.location.search;
-var idLodging = search_id.slice(1);
-return logements.filter(el => el.id === idLodging);
+    const search_id = window.location.search;
+    var idLodging = search_id.slice(1);
+    return logements.filter(el => el.id === idLodging);
 }
 
 function LodgingPage() {
     return (
-        
+
         idRecovery().map((el) =>
             <div className="lodging" key={el.id}>
-                <img className='lodging__carrousel' src={el.cover} alt={el.title} />
+                    {Carousel(el.pictures)}
+                
                 <div className="lodging__box">
                     <div className='lodging__box__title'>
                         <h1 className='lodging__box__title__main'>{el.title}</h1>
@@ -23,7 +26,7 @@ function LodgingPage() {
                     </figure>
                     <ul className='lodging__box__tags'>{el.tags.map((tag, index) => <li className='lodging__box__tags__list' key={`${tag}-${index}`}>{tag}</li>)}
                     </ul>
-                    <p className='lodging__box__rate'>{el.rating}</p>
+                    <div className='lodging__box__rate'><CareScale careType='rating' scaleValue={el.rating} /></div>
                 </div>
                 <div className='lodging__details'>
                     <details className='lodging__details__collapse'>
