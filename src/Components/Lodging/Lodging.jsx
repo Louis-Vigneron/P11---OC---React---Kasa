@@ -1,20 +1,19 @@
 import logements from '../../logements.json';
 import CareScale from '../../Components/CareScale/CareScale';
 import Carousel from '../Carousel/Carousel';
-
-function idRecovery() {
-    const search_id = window.location.search;
-    var idLodging = search_id.slice(1);
-    return logements.filter(el => el.id === idLodging);
-}
+import { useParams } from 'react-router-dom';
+import ErrorPage from '../Error_Page/Error_page'; 
 
 function LodgingPage() {
-    return (
+    const params = useParams()
+    let a = [];
+    logements.forEach(els => a.push(els.id))
 
-        idRecovery().map((el) =>
+    if ( a.includes(params.idLodging)) {
+        return (
+        logements.filter(el => el.id === params.idLodging).map((el) =>
             <div className="lodging" key={el.id}>
-                    {Carousel(el.pictures)}
-                
+                {Carousel(el.pictures)}
                 <div className="lodging__box">
                     <div className='lodging__box__title'>
                         <h1 className='lodging__box__title__main'>{el.title}</h1>
@@ -44,7 +43,11 @@ function LodgingPage() {
                     </details>
                 </div>
             </div>
-        ))
+        ))} 
+        else {
+            return <ErrorPage />;
+        }
+    
 
 
 }

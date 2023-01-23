@@ -482,4 +482,5 @@ details[open] summary ~ * {
 .carousel__box__button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

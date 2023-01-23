@@ -16,8 +16,11 @@ function Carousel(a) {
         setIndex(newIndex >= length ? 0 : newIndex);
     };
 
-    return (
+    if (length > 1)
+    {
+        return (
         <div className='carousel'>
+            
             <div className='carousel__box'>
                 <button className='carousel__box__button' onClick={handlePrevious}><img src={Cross} alt="" /></button>
                 <button className='carousel__box__button' onClick={handleNext}><img src={CrossC} alt="" /></button>
@@ -25,7 +28,15 @@ function Carousel(a) {
           
             <img className='carousel__img'src = {a[index]} alt =''/>
         </div>
-    );
+    ); 
+    } else {
+        return (
+            <div className='carousel'>                                           
+                <img className='carousel__img'src = {a[index]} alt =''/>
+            </div>
+        ); 
+    }
+   
 
 }
 

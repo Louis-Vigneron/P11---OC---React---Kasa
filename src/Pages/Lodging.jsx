@@ -6,7 +6,6 @@ function Lodging() {
     return (
       <div>
        <Header />
-     
        <LodgingPage />       
        <Footer />
       </div>
