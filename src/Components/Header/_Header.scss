@@ -1,18 +1,16 @@
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 40px 100px 0 100px;
+    margin: 20px 100px 0 100px;
     &__logo {
         min-height: 33px;
     }
-
     &__nav {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 0;
         margin: 0;
-
         &__link {
             font-family: $main_font;
             font-style: normal;
@@ -26,7 +24,6 @@
             margin-left: 57px;
         }
     }
-    
     @media (max-width:$screen_mobile) {
         margin: 40px 25px 0 25px;
         &__logo{

@@ -1,0 +1,80 @@
+.collapse {
+    margin-top: 50px;
+    width: 85%;
+    list-style-type: none;
+    &[open] {
+        .collapse__title::after {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__title {
+        cursor: pointer;
+        color: $color_white;
+        background-color: $color_orange;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 142.6%;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+
+        &::after {
+            content: url("../Assets/Vector.svg");
+            transform: rotate(180deg);
+            transition: 1s;
+        }
+    }
+
+    &__text {
+        color: $color_orange;
+        margin: 0;
+        background-color: $color_grey;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 142.6%;
+        padding: 25px 15px 15px 15px;
+        border-radius: 5px;
+        
+    }
+
+    @media (max-width: $screen_mobile) {
+
+        width: 80%;
+        &__title {
+            font-size: 18px;
+            padding: 5px 10px;
+
+            &::after {
+                content: url("../Assets/VectorLittle.svg");
+            }
+        }
+
+        &__text {
+
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+
+
+
+details[open] summary~* {
+    animation: sweep 1s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-bottom: -10px
+    }
+
+    100% {
+        opacity: 1;
+        margin-bottom: 0px
+    }
+}

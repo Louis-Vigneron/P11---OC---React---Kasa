@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logements from '../../logements.json';
+import logements from '../../Data/logements.json';
 const galleryList = logements;
 
 function Gallery() {

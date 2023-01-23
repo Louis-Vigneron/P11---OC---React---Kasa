@@ -6,7 +6,7 @@ import Background from "../Assets/Banner_about.png";
 
 function About() {
     return (
-      <div>
+      <div className="about">
        <Header />
        <Banner img={Background}/>
        <AboutPage />

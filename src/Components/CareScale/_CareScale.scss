@@ -1,0 +1,12 @@
+.rate {
+    &__star{
+        margin: 5px;
+    }
+    @media (max-width:$screen_mobile){
+        &__star{
+            img{
+                height: 20px;
+            }           
+        }
+    }
+}

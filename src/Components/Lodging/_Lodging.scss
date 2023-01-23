@@ -2,19 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px 100px 25px 100px;
-
-    
-
+    margin: 0px 100px 50px 100px;
     &__box {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-
         &__title {
             display: flex;
             flex-direction: column;
-            width: 50%;
+            width: 75%;
             color: $color_orange;
             font-family: $main_font;
 
@@ -34,18 +30,16 @@
                 margin: 0;
             }
         }
-
         &__rate {
-            width: 50%;
+            width: 40%;
             text-align: end;
         }
-
         &__tags {
-            width: 50%;
+            width: 60%;
             display: flex;
-            padding: 0;
             justify-content: flex-start;
-
+            flex-wrap: wrap;
+            padding: 0;
             &__list {
                 list-style: none;
                 color: $color_white;
@@ -54,18 +48,17 @@
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 500;
-                font-size: 14px;
+                font-size: 18px;
                 line-height: 142.6%;
                 min-width: 100px;
                 padding: 5px 15px;
                 text-align: center;
                 margin-right: 15px;
+                margin-top: 10px;
             }
-
         }
-
         &__figure {
-            width: 50%;
+            width: 25%;
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
@@ -89,50 +82,56 @@
             }
         }
     }
-    
-&__details {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    &__collapse {
-        display: flex;      
-        width: 48%;    
-        &[open] {
-            .lodging__details__collapse__title::after {
-                transform: rotate(0deg);
+    &__details {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;      
+        margin-top: 25px;
+    }
+    @media (max-width:$screen_mobile) {
+        margin: 20px;
+        align-items: center;
+
+        &__box {
+            &__title {
+                width: 100%;
+                &__main{
+                    font-size: 30px;
+                }
             }
-        }    
-        &__title {
-            cursor: pointer;
-            color: $color_white;
-            background-color: $color_orange;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 142.6%;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            padding: 5px 15px;
-    
-            &::after {
-                content: url("./Vector.svg");
-                transform: rotate(180deg);
-                transition: 1s;
+
+            &__tags {
+                width: 100%;               
             }
+
+            &__rate {
+                width: 50%;
+                text-align: start;
+                display: flex;
+                align-items: center;
+            }
+
+            &__figure {
+                width: 50%;
+                order: 1;
+            }
+
         }
-    
-        &__text {
-            color: $color_orange;
-            margin: 0;
-            background-color: $color_grey;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 142.6%;
-            padding: 25px 15px 15px 15px;
-            border-radius: 5px;
-            list-style: none;
+
+        &__details {
+            margin-top: 25px;
+            display: block;           
         }
     }
-    
+
 }
+
+.lodging__details .collapse {
+    width: 48%;
+    margin: 0;
+    @media (max-width:$screen_mobile){
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
 }

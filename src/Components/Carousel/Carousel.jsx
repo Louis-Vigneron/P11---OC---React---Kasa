@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Cross from '../../Assets/VectorC.svg';
+import Cross from '../../Assets/VectorG.svg';
 import CrossC from '../../Assets/VectorD.svg';
 
 function Carousel(a) {
@@ -32,7 +32,7 @@ function Carousel(a) {
     } else {
         return (
             <div className='carousel'>                                           
-                <img className='carousel__img'src = {a[index]} alt =''/>
+                <img className='carousel__img carousel__img--one'src = {a[index]} alt =''/>
             </div>
         ); 
     }

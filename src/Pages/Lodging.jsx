@@ -4,7 +4,7 @@ import LodgingPage from "../Components/Lodging/Lodging";
 
 function Lodging() {
     return (
-      <div>
+      <div className="site-content">
        <Header />
        <LodgingPage />       
        <Footer />

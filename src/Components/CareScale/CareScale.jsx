@@ -9,17 +9,17 @@ function CareScale({ scaleValue}) {
 		
 
 	return (
-		<div>
+		<div className='rate'>
 			{range.map((rangeElem) =>
 				scaleValue >= rangeElem ? (
-					<span key={rangeElem.toString()}>{scaleTypeGood}</span> 
+					<span className='rate__star' key={rangeElem.toString()}>{scaleTypeGood}</span> 
                     
 				) : null
 			)}
 		
 			{range.map((rangeElem) =>
 				scaleValueBad >= rangeElem ? (
-					<span key={rangeElem.toString()}>{scaleTypeBad}</span> 
+					<span className='rate__star' key={rangeElem.toString()}>{scaleTypeBad}</span> 
 				) : null
 			)}
 		</div>

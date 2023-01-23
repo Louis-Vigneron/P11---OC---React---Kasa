@@ -1,8 +1,9 @@
-import logements from '../../logements.json';
+import logements from '../../Data/logements.json';
 import CareScale from '../../Components/CareScale/CareScale';
 import Carousel from '../Carousel/Carousel';
 import { useParams } from 'react-router-dom';
 import ErrorPage from '../Error_Page/Error_page'; 
+import Collapse from "../Collapse/Collapse";
 
 function LodgingPage() {
     const params = useParams()
@@ -28,19 +29,11 @@ function LodgingPage() {
                     <div className='lodging__box__rate'><CareScale careType='rating' scaleValue={el.rating} /></div>
                 </div>
                 <div className='lodging__details'>
-                    <details className='lodging__details__collapse'>
-                        <summary className='lodging__details__collapse__title'>
-                            Description
-                        </summary>
-                        <p className='lodging__details__collapse__text'>{el.description}</p>
-                    </details>
-                    <details className='lodging__details__collapse'>
-                        <summary className='lodging__details__collapse__title'>
-                            Équipements
-                        </summary>
-                        <ul className='lodging__details__collapse__text'>{el.equipments.map((equipment, index) => <li key={`${equipment}-${index}`}>{equipment}</li>)}
-                        </ul>
-                    </details>
+
+                    <Collapse title = "Description" text = {el.description}/>
+                    <Collapse title = "Équipements" text = {el.equipments.map((equipment, index) => <li key={`${equipment}-${index}`}>{equipment}</li>)}/>
+                            
+                      
                 </div>
             </div>
         ))} 
