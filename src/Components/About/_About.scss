@@ -2,12 +2,16 @@
     .banner {
         height: 250px;
         margin-top: 50px;
+
         &__img {
             object-position: 50% 25%;
         }
     }
+
     .collapse {
-        &__title, &__text{
+
+        &__title,
+        &__text {
             font-size: 24px;
         }
     }

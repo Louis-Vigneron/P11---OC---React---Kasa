@@ -10,7 +10,7 @@ function Home() {
     <div>
       <Header />
       <main>
-        <Banner img={Background} title="Chez vous, partout et ailleurs"/>
+        <Banner img={Background} title="Chez vous, partout et ailleurs" />
         <Gallery />
       </main>
       <Footer />

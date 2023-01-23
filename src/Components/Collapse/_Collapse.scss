@@ -2,6 +2,7 @@
     margin-top: 50px;
     width: 85%;
     list-style-type: none;
+
     &[open] {
         .collapse__title::after {
             transform: rotate(0deg);
@@ -36,12 +37,13 @@
         line-height: 142.6%;
         padding: 25px 15px 15px 15px;
         border-radius: 5px;
-        
+
     }
 
     @media (max-width: $screen_mobile) {
 
         width: 80%;
+
         &__title {
             font-size: 18px;
             padding: 5px 10px;

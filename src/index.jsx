@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './Styles/normalize.css';
 import './Styles/index.css';
 import Home from './Pages/Home';
-import ErrorPage from './Pages/404'; 
+import ErrorPage from './Pages/404';
 import About from './Pages/About';
 import Lodging from './Pages/Lodging'
 import reportWebVitals from './reportWebVitals';
@@ -18,15 +18,15 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
-    
+
   },
   {
     path: "about",
-    element : <About />,
+    element: <About />,
   },
   {
-    path:  "lodging/:idLodging",
-    element : <Lodging />,
+    path: "lodging/:idLodging",
+    element: <Lodging />,
   },
 ]);
 

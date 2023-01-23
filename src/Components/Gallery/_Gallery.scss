@@ -6,11 +6,11 @@
     margin: 40px 100px 25px 100px;
     border-radius: 25px;
     padding: 31px 50px 0 50px;
-   
+
     &__card {
         width: 30%;
         margin: 25px 0;
-        
+
         &__img {
             object-fit: cover;
             width: 100%;
@@ -33,21 +33,24 @@
         }
     }
 
-    @media (max-width:$screen_tablet){
+    @media (max-width:$screen_tablet) {
         padding: 35px 15px 0 15px;
         margin: 40px 50px 0 50px;
-        &__card{
+
+        &__card {
             width: 45%;
         }
     }
 
     @media (max-width:$screen_mobile) {
         margin: 40px 25px 0 25px;
-        &__card{
+
+        &__card {
             margin: 0;
             width: 100%;
             margin-bottom: -25px;
-            &__img{
+
+            &__img {
                 height: 255px;
             }
         }

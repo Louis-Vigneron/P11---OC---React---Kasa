@@ -35,9 +35,10 @@
         align-items: center;
     }
 
-    @media (max-width:$screen_tablet){
+    @media (max-width:$screen_tablet) {
         margin: 40px 50px 0 50px;
-        &__text{
+
+        &__text {
             font-size: 40px;
         }
     }
@@ -46,7 +47,8 @@
     @media (max-width:$screen_mobile) {
         margin: 40px 25px 0 25px;
         height: 111px;
-        &__text{
+
+        &__text {
             margin-left: 16px;
             width: 55%;
             font-size: 24px;

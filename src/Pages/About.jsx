@@ -5,15 +5,14 @@ import AboutPage from "../Components/About/About";
 import Background from "../Assets/Banner_about.png";
 
 function About() {
-    return (
-      <div className="about">
-       <Header />
-       <Banner img={Background}/>
-       <AboutPage />
-       <Footer/>
-      </div>
-    )
-  }
-  
-  export default About;
-  
+  return (
+    <div className="about">
+      <Header />
+      <Banner img={Background} />
+      <AboutPage />
+      <Footer />
+    </div>
+  )
+}
+
+export default About;
