@@ -7,14 +7,14 @@ import Background from '../Assets/Background_Banner.png'
 
 function Home() {
   return (
-    <div>
+    <>
       <Header />
       <main>
         <Banner img={Background} title="Chez vous, partout et ailleurs" />
         <Gallery />
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
 

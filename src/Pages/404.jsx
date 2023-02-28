@@ -5,11 +5,11 @@ import Header from "../Components/Header/Header";
 
 function Error() {
   return (
-    <div>
+    <>
       <Header />
       <ErrorPage />
       <Footer />
-    </div>
+    </>
   )
 }
 
