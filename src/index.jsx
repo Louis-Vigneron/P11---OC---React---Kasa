@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './Styles/normalize.css';
-import './Styles/index.css';
+import './styles/normalize.css';
+import './styles/index.css';
 import Home from './Pages/Home';
 import ErrorPage from './Pages/404';
 import About from './Pages/About';
