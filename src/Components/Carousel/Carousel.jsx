@@ -26,6 +26,7 @@ function Carousel(a) {
                 </div>
 
                 <img className='carousel__img' src={a[index]} alt='' />
+                <figcaption className='carousel__counter'><span>{index+1}</span>/<span>{length}</span></figcaption>
             </div>
         );
     } else {

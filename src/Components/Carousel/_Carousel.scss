@@ -13,6 +13,12 @@
             margin-top: 75px;
         }
     }
+    &__counter{
+        color: $color_white;
+        position: relative;
+        bottom:30px;
+        text-align: center;
+    }
 
     &__box {
         position: relative;
@@ -32,7 +38,9 @@
         &__img {
             height: 300px;
         }
-
+        &__counter{
+            color: transparent;
+        }
         &__box {
             top: 175px;
             margin: 0 10px;

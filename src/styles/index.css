@@ -39,6 +39,11 @@ body, html {
   text-align: right;
   color: #FF6060;
   margin-left: 57px;
+  line-height: 20px;
+  border-bottom: 1px solid transparent;
+}
+.header__nav__link--line {
+  border-bottom: 1px solid #FF6060;
 }
 @media (max-width: 768px) {
   .header {
@@ -402,6 +407,12 @@ body, html {
 .carousel__img--one {
   margin-top: 75px;
 }
+.carousel__counter {
+  color: #FFFFFF;
+  position: relative;
+  bottom: 30px;
+  text-align: center;
+}
 .carousel__box {
   position: relative;
   top: 300px;
@@ -417,6 +428,9 @@ body, html {
 @media (max-width: 768px) {
   .carousel__img {
     height: 300px;
+  }
+  .carousel__counter {
+    color: transparent;
   }
   .carousel__box {
     top: 175px;
