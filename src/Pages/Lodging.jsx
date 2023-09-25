@@ -4,11 +4,11 @@ import LodgingPage from "../Components/Lodging/Lodging";
 
 function Lodging() {
   return (
-    <div className="site-content">
+    <>
       <Header />
       <LodgingPage />
       <Footer />
-    </div>
+    </>
   )
 }
 
