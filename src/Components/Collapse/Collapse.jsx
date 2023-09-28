@@ -2,15 +2,14 @@ import Arrow from '../../Assets/Vector.svg';
 
 function Collapse(props) {
     const handleClick = (event) => {
-        let test = event.currentTarget
-        let testt = event.target.nextElementSibling
-        console.log(testt)
-        if (test.className === "collapse__title collapse__title--close") {
-            test.className = "collapse__title collapse__title--open"
-            testt.style.animation ="1s open forwards"
+        let summary = event.currentTarget
+        let text = event.target.nextElementSibling
+        if (summary.className === "collapse__title collapse__title--close") {
+            summary.className = "collapse__title collapse__title--open"
+            text.style.animation ="1s open forwards"
         } else {
-            test.className = "collapse__title collapse__title--close"
-            testt.style.animation ="1s close forwards"
+            summary.className = "collapse__title collapse__title--close"
+            text.style.animation ="1s close forwards"
         }
     };
 
